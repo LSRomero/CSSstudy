@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b4dbc0be8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleproject.css">
+    <title>Laís Romero</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./logolr8.png" alt="Logo Laís Romero">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/LSRomero">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lais-romero-67834b165/">Linkedin</a>
+            </li>
+            <li>
+                <a href="mailto:lais.romero@gmail.com">E-mail</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="nome">
+                <h1>Laís Romero</h1>
+                <h5>Front-End Developer Jr</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>Olá! Sou estudante de Engenharia da Computação, me aprofundando na formação em programação full stack. Atualmente construo projetos em HTML, CSS e Java Script durante o estágio e de forma independente. Estou disponível para contribuir em projetos que envolvam estas linguagens. Vamos conversar? </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :) ">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow =document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display =document.getElementById('about');
+            display.classList.toggle('activation');
+        }
+    </script>
+</body>
+</html>
